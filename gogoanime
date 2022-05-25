@@ -517,15 +517,15 @@ player_fn="mpv" #video player needs to be able to play urls
 agent="Mozilla/5.0 (X11; Linux x86_64; rv:99.0) Gecko/20100101 Firefox/99.0"
 is_download=0
 PID=0
-quality=best
+quality=480
 scrape=query
 download_dir="."
 choice=
 auto_play=0
 # history file path
-logfile="${XDG_CACHE_HOME:-$HOME/.cache}/ani-hsts"
-urlfile="${XDG_CACHE_HOME:-$HOME/.cache}/ani-url"
-logdir="${XDG_CACHE_HOME:-$HOME/.cache}"
+logfile="${XDG_CACHE_HOME:-$HOME/.cache}/gogoanime/log"
+urlfile="${XDG_CACHE_HOME:-$HOME/.cache}/gogoanime/url"
+logdir="${XDG_CACHE_HOME/gogoanime:-$HOME/.cache/gogoanime}"
 
 # create history file and history dir if none found
 [ -d "$logdir" ] || mkdir "$logdir"
